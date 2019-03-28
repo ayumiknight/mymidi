@@ -1,0 +1,85 @@
+.order-item {
+	margin: .08rem;
+	margin-top: 0;
+	border: 1px solid #eee;
+	padding: 0 .08rem 0.08rem;
+	background-color:white;
+	border-radius: .04rem;
+	position: relative;
+
+	.status {
+		position: absolute;
+		top:.05rem;
+		right:0.08rem;
+	}
+
+	.line {
+		border-bottom: 1px solid #eee;
+		line-height: 1.6;
+		padding: 0.04rem 0;
+		&.line1 {
+			color: #999;
+		}
+
+		&.no-border {
+			border:none;
+		}
+
+		&.line3.no-border {
+			padding-bottom:0;
+		}
+
+		&.line2 {
+			.hotel-name {
+				color: #49e;
+				line-height: 2.3;
+			}
+			.product-name {
+				font-size:.13rem;
+				line-height:1.2;
+				padding: 0rem 0 .05rem 0;
+			}
+			.date-range {
+				color: #999;
+			}
+		}
+		&.desc {
+			* { font-size:.1rem; line-height:1; }
+			line-height:1.2;
+			color: #666;
+			border:none;
+		}
+	}
+
+	.show-more-btn {
+		background-color:#f5f5f5;
+		text-align:center;
+		color: #999;
+		font-size:.1rem;
+		height:.17rem;
+		line-height:.17rem;
+		margin: .1rem 0;
+		position:relative;
+		&:after {
+			content:'';
+			position:absolute;
+			bottom: 0;
+			margin-bottom: -0.04rem;
+			left: 50%;
+			height:0;
+			font-size:0;
+			margin-left: -0.05rem;
+			border-left: .05rem solid transparent;
+			border-right: .05rem solid transparent;
+			border-top: .05rem solid #f5f5f5;
+		}
+		&.inverse:after {
+			border-bottom: .05rem solid #f5f5f5;
+			border-top: none;
+			bottom:auto;
+			top:0;
+			margin-bottom:0;
+			margin-top:-0.04rem;
+		}
+	}
+}

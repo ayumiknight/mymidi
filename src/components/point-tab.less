@@ -1,0 +1,29 @@
+.tab-container {
+	width: 100%;
+	height: 0.32rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background: #e5e5e5;
+	position: relative;
+	.tab-item {
+		font-size: 0.14rem;
+		width: 1.4rem;
+		height: 100%;
+		text-align: center;
+		line-height: 0.32rem;
+		border: 1px solid #ececec;
+		background: #f0f0f0;
+		color: #a5a5a5;
+		border-top-right-radius: .03rem;
+		border-top-left-radius: .03rem;
+		box-shadow: 0.05rem -0.04rem 0.09rem 0px #e0e0e0;
+		&.active {
+			background: #fff;
+			color: #000;
+			border-bottom: 0px;
+		}
+	}
+}

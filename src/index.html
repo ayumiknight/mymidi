@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>积分</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: 0;
+        }
+        input, select, button, textarea, a {
+            font: inherit;
+            color: inherit
+        }
+        iframe{
+            display: none;
+        }
+        img {
+            border: 0
+        }
+        a {
+            text-decoration: none
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+        li, ol {
+            list-style-type: none
+        }
+        html,body{
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            font-size: .12rem;
+        }
+
+    </style>
+</head>
+<body>
+<script>
+    function resetREM() {
+        var w = Math.max(document.body.offsetWidth, document.documentElement.offsetWidth);
+        w = Math.min(w, 580);
+        document.getElementsByTagName('html')[0].style.fontSize = (w/3.2)+'px';
+    }
+    resetREM();
+    window.onload = resetREM;
+    window.onresize = resetREM;
+</script>
+<div id='root'>
+</div>
+<script src="/static/bundle.js"></script>
+</body>
+</html>

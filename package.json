@@ -1,0 +1,77 @@
+{
+  "name": "zhida-point",
+  "version": "0.0.61",
+  "main": "index.js",
+  "description": "直达积分商城",
+  "scripts": {
+    "lint": "eslint src",
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js",
+    "gulp": "gulp",
+    "start": "cross-env ZKTMQ_URL=http://127.0.0.1:1234 GRAPHQL_GATEWAY_BALANCER=http://39.107.204.205:10000 GRAPHQL_GATEWAY=http://39.107.204.205:10000 NODE_ENV=development nodemon --watch koa index.js",
+    "test_production": "ZKTMQ_URL=http://127.0.0.1:1234 GRAPHQL_GATEWAY_BALANCER=http://123.57.55.169:10000 GRAPHQL_GATEWAY=http://123.57.55.169:10000 NODE_ENV=production node index.js",
+    "test": "ZKTMQ_URL=http://127.0.0.1:1234 GRAPHQL_GATEWAY_BALANCER=http://123.57.55.169:10000 GRAPHQL_GATEWAY=http://123.57.55.169:10000 NODE_ENV=production node test.js",
+    "update": "npm update zkt-graphql zhida-koa-utils zkt-polyfill"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^0.28.4",
+    "eslint": "^3.14.1",
+    "eslint-plugin-react": "^6.9.0",
+    "file-loader": "^0.11.2",
+    "gulp-bump": "^2.7.0",
+    "gulp-git": "^2.4.0",
+    "gulp-gzip": "^1.4.0",
+    "koa-webpack": "^0.5.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "promise-polyfill": "^6.0.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-router-dom": "^4.1.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "resolve-url-loader": "^2.0.2",
+    "rimraf": "^2.6.0",
+    "run-sequence": "^1.2.2",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.2.0",
+    "tone": "^13.4.9"
+  }
+}

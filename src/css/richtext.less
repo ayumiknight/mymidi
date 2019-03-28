@@ -1,0 +1,71 @@
+.richtext > .content {
+	font-size:.11rem;
+	line-height: 1.8;
+
+	br {
+		content: "A" !important;
+		display: block !important;
+		padding-bottom: .05rem !important;
+	}
+
+	* { font-size:.11rem; }
+
+	h1,h2,h3,h4,h5 {
+		line-height:1.6;
+		margin:0;
+		padding:0.5em 0;
+		color: #333;
+		font-weight:bold;
+	}
+
+	h1 { font-size: .2rem; * {font-size: .2rem;} }
+	h2 { font-size: .18rem; * {font-size: .18rem;} }
+	h3 { font-size: .16rem; * {font-size: .16rem;} }
+	h4 { font-size: .14rem; * {font-size: .14rem;} }
+	h5 { font-size: .12rem; * {font-size: .12rem;} }
+
+	a {
+		text-decoration: underline;
+		color: #49e;
+	}
+
+	ul,ol {
+		margin-left: .15rem;
+	}
+
+	p {
+		font-size:.11rem;
+		line-height: 1.5;
+		padding: 0.05rem 0 .1rem;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: .15rem auto;
+		display:block;
+	}
+
+	img[src$=gif] {
+		display: inline;
+		margin:0;
+	}
+
+	// figure {
+	// 	margin:0 -15px;
+	// 	text-align:center;
+	// 	display:block;
+	// 	-webkit-appearance: none;
+	// 	padding:0;
+	// }
+
+	// figure[title]:after {
+	// 	content: "- " attr(title) " -";
+	// 	display:block;
+	// 	text-align:center;
+	// 	margin: 0 0 .1rem 0;
+	// 	font-size:.1rem;
+	// 	color: #666;
+	// 	font-style: italic;
+	// }
+}

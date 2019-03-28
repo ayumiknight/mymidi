@@ -1,0 +1,32 @@
+
+.tabs-container {
+	position:relative; 
+
+	.tabs-head {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		width:100%;
+		display: table;
+		box-shadow: 0 0 .1rem rgba(0,0,0,0.4);
+		table-layout: fixed;
+		
+		.tab-head {
+			display: table-cell;
+			text-align: center;
+			background-color: white;
+			height: .4rem;
+			line-height:.4rem;
+			color: #333;
+
+			&.active {
+				color: white;
+				background-color: #ff5d5e;
+			}
+		}
+	}
+
+	.tabs-content {
+		padding-top: .4rem;
+	}
+}

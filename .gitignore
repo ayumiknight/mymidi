@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+.DS_Store
+.idea
+*.swp
+MIDI.JS
+Midi
+koa
