@@ -1,0 +1,32 @@
+
+.note-table {
+	display: flex;
+	flex: none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	* {
+		display: flex;
+		flex: none;
+	}
+	flex-direction: row;
+	overflow-x: scroll;
+	width: 8.5rem;
+	.notes-block {
+		flex-direction: row;
+		.note-column {
+			flex-direction: column;
+			.note-cell {
+				width: .2rem;
+				height: .2rem;
+				background: #e8e8e8;
+			}
+		}
+		&:nth-child(2n) {
+			.note-cell {
+				background: #d6d6d6;
+			}
+		}
+	}
+}

@@ -35,7 +35,8 @@
             -webkit-tap-highlight-color: transparent;
         }
         body {
-            font-size: .12rem;
+            min-height: 100vh;
+            font-size: .2rem;
         }
 
     </style>
@@ -43,9 +44,9 @@
 <body>
 <script>
     function resetREM() {
-        var w = Math.max(document.body.offsetWidth, document.documentElement.offsetWidth);
-        w = Math.min(w, 580);
-        document.getElementsByTagName('html')[0].style.fontSize = (w/3.2)+'px';
+        var h = Math.max(document.body.offsetHeight, document.documentElement.offsetHeight);
+        h = Math.max(h, 600);
+        document.getElementsByTagName('html')[0].style.fontSize = (h / 8.5 )+'px';
     }
     resetREM();
     window.onload = resetREM;
