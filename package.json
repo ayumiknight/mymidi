@@ -70,7 +70,7 @@
   "dependencies": {
     "@tonejs/midi": "^1.2.2",
     "babel-polyfill": "^6.26.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.0",
     "koa-mount": "^4.0.0",
