@@ -65,7 +65,7 @@
     "style-loader": "^0.18.2",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.11.3"
   },
   "dependencies": {
     "@tonejs/midi": "^1.2.2",
